@@ -154,24 +154,6 @@ for _, part in pairs(nukeModel:GetChildren()) do
 	end
 end
 
---[[local CPart = Instance.new("Part")
-CPart.Position = charecter.PrimaryPart.Position + Vector3.new(10, 5, 10)
-CPart.Anchored = true
-CPart.Transparency = 1
-CPart.CanCollide = false
-CPart.Name = "CameraFocus"
-CPart.Parent = workspace
-
-local Camera = workspace.Camera
-Camera.CameraType = Enum.CameraType.Scriptable
-
-local nuke = workspace:FindFirstChild("NuclearBomb_BIG")
-
-game:GetService("RunService").Heartbeat:Connect(function()
-	Camera.CFrame = CFrame.lookAt(CPart.Position, nuke.Nose)
-end)--]]
-
-
 task.wait(0.2)
 -- Добавляем модель в мир
 nukeModel.Parent = workspace
